@@ -18,7 +18,7 @@ public final class Board {
     }
     
     /*
-    Populamos el tablero
+        Populate an empty board with '_' (3x3)
     */
     private void populateBoard() {
         for(int i = 0; i<this.getBoardSize(); i++) {
@@ -29,13 +29,15 @@ public final class Board {
     }
     
     /*
-    Imprimimos el tablero en la forma en la que se encuentre actualmente
+        Print the board the way it is at the moment.
     */
+    
     protected void printBoard() {
         for(int i = 0; i<this.getBoardSize(); i++) {
             for(int j = 0; j<this.getBoardSize(); j++) {
-                System.out.print(board[i][j] + " ");
+                System.out.print("|" + board[i][j]);
             }
+            System.out.print("|");
             System.out.println("");
         }
     }
